@@ -1,0 +1,29 @@
+\select@language {french}
+\contentsline {chapter}{\numberline {1}Autour des variables al\begingroup \let \relax \relax \endgroup [Pleaseinsert\PrerenderUnicode {é}intopreamble]atoires gaussiennes}{3}
+\contentsline {section}{\numberline {1.1}Variables al\IeC {\'e}atoires gaussiennes r\IeC {\'e}elles}{3}
+\contentsline {subsection}{\numberline {1.1.1}Densit\IeC {\'e} de probabilit\IeC {\'e} d'une variable al\IeC {\'e}atoire gaussienne de de moyenne $\mu $ et de variance $\sigma ^2$}{3}
+\contentsline {subsection}{\numberline {1.1.2}Histogramme de 100 r\IeC {\'e}alisations de la loi $\mathcal {N}_{\mathbb {R}}(5, 1)$}{4}
+\contentsline {subsection}{\numberline {1.1.3}Histogramme de 1000 r\IeC {\'e}alisations de la loi $\mathcal {N}_{\mathbb {R}}(5, 1)$}{4}
+\contentsline {section}{\numberline {1.2}Variables al\IeC {\'e}atoires gaussiennes vectorielles}{4}
+\contentsline {subsection}{\numberline {1.2.1}Fonction caract\IeC {\'e}ristique de la variable $t^TX$}{4}
+\contentsline {subsection}{\numberline {1.2.2}Montrons que les $X_1, ..., X_n$ sont ind\IeC {\'e}pentantes}{4}
+\contentsline {subsection}{\numberline {1.2.3}Densit\IeC {\'e} de probabilit\IeC {\'e} de la loi $\mathcal {N}_{\mathbb {R}^n}(0, I)$}{4}
+\contentsline {subsection}{\numberline {1.2.4}Densit\IeC {\'e} de probabilit\IeC {\'e} de la loi $\mathcal {N}_{\mathbb {R}^n}(\mu , \Gamma )$}{5}
+\contentsline {subsection}{\numberline {1.2.5}Montrons que les composantes d'un vecteur gaussien sont ind\IeC {\'e}pendantes si et seulement si sa matrice de covariance est diagonale}{5}
+\contentsline {subsection}{\numberline {1.2.6}Trac\IeC {\'e} de la densit\IeC {\'e} de la loi $\mathcal {N}_{\mathbb {R}^2}(\mu , \Gamma )$}{5}
+\contentsline {subsection}{\numberline {1.2.7}Histogramme de 1000 r\IeC {\'e}alisations de la loi $\mathcal {N}_{\mathbb {R}^2}(\mu , \Gamma )$}{5}
+\contentsline {subsection}{\numberline {1.2.8}Montrons que $X \sim \mathcal {N}_{\mathbb {R}^d}(0, I) \Rightarrow UX \sim \mathcal {N}_{\mathbb {R}^d}(0, I), \forall U \in \mathbb {O}_d(\mathbb {R})$}{5}
+\contentsline {subsection}{\numberline {1.2.9}Histogramme de 1000 r\IeC {\'e}alisations du vecteur $UX$}{6}
+\contentsline {subsection}{\numberline {1.2.10}D\IeC {\'e}monstration et v\IeC {\'e}rification exp\IeC {\'e}rimentale du caract\IeC {\`e}re gaussien d'un vecteur donn\IeC {\'e}}{6}
+\contentsline {section}{\numberline {1.3}Variables al\IeC {\'e}atoires gaussiennes complexes}{7}
+\contentsline {subsection}{\numberline {1.3.1}Variance et densit\IeC {\'e} de probabilit\IeC {\'e} de $Z \sim \mathcal {N}_{\mathbb {C}}(\mu , \sigma ^2)$}{7}
+\contentsline {subsection}{\numberline {1.3.2}Histogramme de 1000 r\IeC {\'e}alisations de la loi $\mathcal {N}_{\mathbb {C}}(0, 1)$}{7}
+\contentsline {section}{\numberline {1.4}Th\IeC {\'e}or\IeC {\`e}me de la limite centrale}{7}
+\contentsline {subsection}{\numberline {1.4.1}Loi de $W_n$ lorsque $X_k \sim \mathcal {N}_{\mathbb {R}}(\mu , \sigma ^2)$}{7}
+\contentsline {subsection}{\numberline {1.4.2}Histogramme de 1000 r\IeC {\'e}alisations de la loi $W_n$ lorsque $X_k \sim \mathcal {N}_{\mathbb {R}}(\mu , \sigma ^2)$}{8}
+\contentsline {subsection}{\numberline {1.4.3}Histogramme de 1000 r\IeC {\'e}alisations de la loi $W_n$ lorsque $X_k \sim \mathcal {U}([0,1])$}{8}
+\contentsline {subsection}{\numberline {1.4.4}Histogramme de 1000 r\IeC {\'e}alisations de la loi $W_n$ lorsque $X_k \sim \mathcal {B}(\frac {1}{2}) $}{8}
+\contentsline {section}{\numberline {1.5}Loi du $\chi ^2$}{8}
+\contentsline {subsection}{\numberline {1.5.1}Densit\IeC {\'e} de probabilit\IeC {\'e} d'une variable suivant une loi $\chi ^2(n)$}{8}
+\contentsline {subsection}{\numberline {1.5.2}Moyenne et variance de la loi $\chi ^2(n)$}{9}
+\contentsline {subsection}{\numberline {1.5.3}Trac\IeC {\'e} de la densit\IeC {\'e} de probabilit\IeC {\'e} de la loi $\chi ^2(n)$}{9}
