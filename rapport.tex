@@ -41,10 +41,10 @@
 		\subsection{Fonction caractéristique de la variable $t^TX$}
 			On a 
 			\[\Phi_{t^TX}(u) = \mathbb{E}[e^{iut^TX}] = \mathbb{E}[e^{iu\sum\limits_{k=1}^{n}t_kX_k}] \]
-		\subsection{Montrons que les $X_1, ..., X_n$ sont indépentantes}
+		\subsection{Montrons que les $X_1, \ldots, X_n$ sont indépentantes}
 			En se servant du lemme donné, si 
 			\[\mathbb{E}[e^{i\sum\limits_{k=1}^{n}t_kX_k}] = \prod\limits_{k=1}^{n}\mathbb{E}[e^{it_kX_k}]\]
-			alors les variables aléatoires $X_1, ..., X_n$ seront indépendantes.
+			alors les variables aléatoires $X_1, \ldots, X_n$ seront indépendantes.
 			Soit $X \sim \mathcal{N}_{\mathbb{R}^\mathbb{N}}(\mu, \sigma^2)$ et $Y \sim \mathcal{N}_{\mathbb{R}^\mathbb{N}}(O, I)$, on a la relation suivante entre $X$ et $Y$ :
 			\[ X = m + \sigma Y \]
 			On en déduit que
@@ -54,10 +54,10 @@
 			De plus, $\Phi_{X_k}(t_k) = e^{-\frac{t_k^2}{2}} = \mathbb{E}[e^{it_kX_k}] $, donc $\prod\limits_{k=1}^{n}\Phi_{X_k}(t_k) = \Phi_{t^TX}(1) = \mathbb{E}[e^{i\sum\limits_{k=1}^{n}t_kX_k}] $.\\
 			On a bien montré que 
 			\[\mathbb{E}[e^{i\sum\limits_{k=1}^{n}t_kX_k}] = \prod\limits_{k=1}^{n}\mathbb{E}[e^{it_kX_k}]\]
-			Donc les variables aléatoires $X_1, ..., X_n$ sont indépendantes.
+			Donc les variables aléatoires $X_1, \ldots, X_n$ sont indépendantes.
 		\subsection{Densité de probabilité de la loi $\mathcal{N}_{\mathbb{R}^n}(0, I)$}
 			On a $\forall k$, $X_k \sim \mathcal{N}_{\mathbb{R}}(0, 1)$ indépendantes, ainsi
-			\[ f(X) = f(X_1, ... X_n) = \prod\limits_{k=1}^{n}f_k(X_k) = (\frac{1}{\sqrt{2\pi}})^ne^{-\frac{1}{2}\sum\limits_{k=1}^{n}x_k} \]
+			\[ f(X) = f(X_1, \ldots X_n) = \prod\limits_{k=1}^{n}f_k(X_k) = (\frac{1}{\sqrt{2\pi}})^ne^{-\frac{1}{2}\sum\limits_{k=1}^{n}x_k} \]
 		\subsection{Densité de probabilité de la loi $\mathcal{N}_{\mathbb{R}^n}(\mu, \Gamma)$}
 		\subsection{Montrons que les composantes d'un vecteur gaussien sont indépendantes si et seulement si sa matrice de covariance est diagonale}
 			Si les composantes d'un vecteur gaussien sont indépendantes, alors $\forall i \neq j$ on a $COV(X_i, X_j) = 0$, ainsi, la matrice de covariance a tous ses éléments non diagonaux qui sont nuls. Cette dernière est donc diagonale.\\
@@ -66,9 +66,9 @@
 			et
 			\[f(X) = \frac{1}{\sqrt{2\pi}^n\prod\limits_{k=1}^{n}\sigma_k}e^{-\frac{1}{2}(x-\mu)^T\left[ 
 				\begin{array}{ccc} 
-					\sigma_1^2 & ... & 0 \\
-					\cdot & \cdot & \cdot \\
-					0 & ... & \sigma_n^2 \\
+					\sigma_1^2 & \cdots & 0 \\
+					\vdots & \ddots & \vdots \\
+					0 & \cdots & \sigma_n^2 \\
 				\end{array} 
 			\right]^{-1}(x-\mu)} = \frac{1}{\sqrt{2\pi}^n\prod\limits_{k=1}^{n}\sigma_k}e^{-\frac{1}{2}\sum\limits_{k=1}^{n}\frac{(x_k - \mu_k)}{\sigma_k^2}} \]
 			On a bien $\prod\limits f_k(X_k) = f(X)$, les variables sont donc indépendantes.
@@ -77,9 +77,9 @@
 		\subsection{Histogramme de 1000 réalisations de la loi $\mathcal{N}_{\mathbb{R}^2}(\mu, \Gamma)$}
 		
 		\subsection{Montrons que $X \sim \mathcal{N}_{\mathbb{R}^d}(0, I) \Rightarrow UX \sim \mathcal{N}_{\mathbb{R}^d}(0, I), \forall U \in \mathbb{O}_d(\mathbb{R})$}
-			On a $UX = [a_1, ..., a_d]$, avec $\forall k, a_k = \sum\limits_{i=1}^d u_{ki}X_i$.\\
+			On a $UX = [a_1, \ldots, a_d]$, avec $\forall k, a_k = \sum\limits_{i=1}^d u_{ki}X_i$.\\
 			Calculons l'espérance de ce vecteur : 
-			\[ \mathbb{E}[UX] = \mathbb{E}\left[ [\sum\limits_{i=1}^d u_{1i}X_i, ..., \sum\limits_{i=1}^d u_{di}X_i]\right] = \left[ \sum\limits_{i=1}^d u_{1i}\mathbb{E}[X_i], ..., \sum\limits_{i=1}^d u_{di}\mathbb{E}[X_i]\right] = 0\]car $\forall i, \mathbb{E}[X_i] = 0$.\\
+			\[ \mathbb{E}[UX] = \mathbb{E}\left[ [\sum\limits_{i=1}^d u_{1i}X_i, \ldots, \sum\limits_{i=1}^d u_{di}X_i]\right] = \left[ \sum\limits_{i=1}^d u_{1i}\mathbb{E}[X_i], \ldots, \sum\limits_{i=1}^d u_{di}\mathbb{E}[X_i]\right] = 0\]car $\forall i, \mathbb{E}[X_i] = 0$.\\
 			\\
 			Calculons à présent sa variance
 			\[ Var[UX] = \mathbb{E}[(UX)(UX)^T] = \mathbb{E}[U X X^T U^T] = U \mathbb{E}[XX^T]U^T \]
@@ -200,6 +200,143 @@
 			\end{align*}
 		\subsection{Moyenne et variance de la loi $\chi^2(n)$}
 			Calculons l'espérance de $Y$
-			\[ \mathbb{E}[Y] = \mathbb{E}[\sum\limits_{k=1}^n X_k^2] \]
+			\[ \mathbb{E}[Y] = \mathbb{E}[\sum\limits_{k=1}^n X_k^2] = \sum\limits_{k=1}^n\mathbb{E}[X_k^2] = \sum\limits_{k=1}^n Var[X_k] + \mathbb{E}^2[X_k] = n \]
+			Calculons à présent la variance de $X^2$
+			\[ Var[X^2] = \mathbb{E}[X_k^4] - \mathbb{E}^2[X_k^2] \]
+			Déterminons l'expression de $\mathbb{E}[X_k^4]$
+			\begin{align*}
+				\mathbb{E}[X_k^4] &= \frac{1}{\sqrt{2\pi}}\int_\mathbb{R} x^4 e^{-\frac{x^2}{2}}dx = \frac{1}{\sqrt{2\pi}}\int_\mathbb{R} x^3 \cdot xe^{-\frac{x^2}{2}}dx\\
+				&= \frac{1}{\sqrt{2\pi}}[-x^3 e^{-\frac{x^2}{2}}]_\mathbb{R}+\frac{1}{\sqrt{2\pi}}\int_\mathbb{R} 3x^2e^{-\frac{x^2}{2}}dx\\
+				&= \frac{3}{\sqrt{2\pi}}\int_\mathbb{R} x \cdot xe^{-\frac{x^2}{2}}dx\\
+				&= \frac{3}{\sqrt{2\pi}}[-x e^{-\frac{x^2}{2}}]_\mathbb{R}+\frac{3}{\sqrt{2\pi}}\int_\mathbb{R} e^{-\frac{x^2}{2}}dx\\
+				&= 3 \cdot \int_\mathbb{R} \frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}dx = 3
+			\end{align*}
+			Ainsi
+			\begin{align*}
+				\mathbb{E}[X_k^4] &= 3\\
+				Var[X_k^2] &= \mathbb{E}[X_k^4] - \mathbb{E}^2[X_k^2] = 3-1 = 2
+			\end{align*}
+			On a donc $Var[Y^2] = \sum\limits_{k=1}^n Var[X_k^2] = 2n$, car les variables sont indépendantes.
 		\subsection{Tracé de la densité de probabilité de la loi $\chi^2(n)$}
+
+
+\chapter{Estimation paramétrique}
+	\section{Estimation des paramètres d'une loi gaussienne}
+		\subsection{Démonstration de l'expression des composantes de $\hat{\theta}_n$}
+			On cherche $\hat{\theta}_n$ tel que
+			\[ \hat{\theta}_n = \operatorname*{arg\,max}_{\theta \in \Theta} f_\theta(X_1, \ldots, X_n) = \{ \theta / \forall \theta', f_{\theta'}(\textbf{X}) \leq f_{\theta}(\textbf{X}) \} \]
+			On a
+			\begin{align*}
+				f_\theta(X_1, \ldots, X_n) &= \frac{1}{(2\pi)^\frac{n}{2}|\Sigma|^\frac{1}{2}}e^{-\frac{1}{2}(\textbf{x}-\mu)^T\Sigma^{-1}(\textbf{x}-\mu)}\\
+				&= \frac{1}{(2\pi)^\frac{n}{2}\sigma^n}e^{-\frac{1}{2}\frac{\sum\limits_{k=1}^n (X_k - \mu)^2}{\sigma^2}}
+			\end{align*}
+			\begin{align*}
+				\frac{\partial f_\theta}{\partial\mu}|_{\theta = \hat{\theta}_n} &= 0 = \sum\limits_{k=1}^n (X_k - \hat{\mu}_n) \Leftrightarrow \hat{\mu}_n = \frac{1}{n}\sum\limits_{k=1}^n X_k
+			\end{align*}
+			Dans l'expression précédente de $f_\theta$ on pose $y = \hat{\sigma}^2_n$, ainsi
+			\begin{align*}
+				\frac{\partial f_\theta}{\partial y}|_{\theta = \hat{\theta}_n} &= 0 \\
+				&= \frac{-\frac{n}{2}}{(2\pi)^{\frac{n}{2}}y^{\frac{n}{2}+1}}e^{-\frac{1}{2}\frac{\sum\limits_{k=1}^n (X_k - \hat{\mu}_n)^2}{\sigma^2}} + \frac{1}{(2\pi)^{\frac{n}{2}}y^{\frac{n}{2}}}\left( \frac{1}{2}\frac{\sum\limits_{k=1}^n (X_k - \hat{\mu}_n)^2}{y^2} \right)e^{-\frac{1}{2}\frac{\sum\limits_{k=1}^n (X_k - \hat{\mu}_n)^2}{\sigma^2}}\\
+				&\Leftrightarrow \frac{n}{2y} = \frac{1}{2}\frac{\sum\limits_{k=1}^n (X_k - \hat{\mu}_n)^2}{y^2} \\
+				&\Leftrightarrow \hat{\sigma}^2_n = \frac{1}{n} \sum\limits_{k=1}^n (X_k - \hat{\mu}_n)^2
+			\end{align*}
+		\subsection{Matrice d'information de Fisher}
+			Commençons par calculer $log f_\theta$
+			\begin{align*}
+				log f_\theta(X_1, \ldots, X_n) &= log\left[ \frac{1}{(2\pi)^\frac{n}{2}|\Sigma|^\frac{1}{2}}e^{-\frac{1}{2}(\textbf{x}-\mu)^T\Sigma^{-1}(\textbf{x}-\mu)} \right]\\
+				&= -\frac{1}{2}log\left[ (2\pi)^n \sigma^{2n} \right] -\frac{1}{2}\frac{\sum\limits_{k=1}^n (X_k - \mu)^2}{\sigma^2} \\
+				&= -\frac{n}{2}log(2\pi)-n log(\sigma) -\frac{1}{2}\frac{\sum\limits_{k=1}^n (X_k - \mu)^2}{\sigma^2}
+			\end{align*}
+			\begin{align*}
+				\frac{\partial log f_\theta}{\partial \mu} &= \frac{\sum\limits_{k=1}^n X_k - \mu}{\sigma^2}\\
+				\frac{\partial^2 log f_\theta}{\partial \mu^2} &= -\frac{n}{\sigma^2}\\
+				\frac{\partial^2 log f_\theta}{\partial \mu \partial \sigma^2} &= -\frac{\sum\limits_{k=1}^n X_k - \mu}{\sigma^4}
+			\end{align*}
+			Posons $y=\sigma^2$
+			\begin{align*}
+				log f_\theta(X_1, \ldots, X_n) &= -\frac{n}{2}log(2\pi)-n log(\sqrt{y}) -\frac{1}{2}\frac{\sum\limits_{k=1}^n (X_k - \mu)^2}{y}\\
+				\frac{\partial log f_\theta}{\partial y} &= -\frac{n}{2y} + \frac{1}{2}\frac{\sum\limits_{k=1}^n (X_k - \mu)^2}{y^2}\\
+				\frac{\partial^2 log f_\theta}{\partial y^2} &= -\frac{n}{2^2y} - \frac{2\sum\limits_{k=1}^n (X_k - \mu)^2}{2y^3}
+			\end{align*}
+			On obtient alors la matrice de Fisher suivante :
+			\begin{align*}
+				\left[\begin{array}{cc}
+					-\mathbb{E}[\frac{\partial^2 log f_\theta}{\partial \mu^2}] & -\mathbb{E}[\frac{\partial^2 log f_\theta}{\partial \mu \partial \sigma^2}] \\
+					-\mathbb{E}[\frac{\partial^2 log f_\theta}{\partial \mu \partial \sigma^2}] & -\mathbb{E}[\frac{\partial^2 log f_\theta}{\partial \sigma^4}]
+				\end{array}\right]
+				=
+				\left[\begin{array}{cc}
+					\frac{n}{\sigma^2} & 0 \\
+					0 & \frac{n}{2\sigma^4}]
+				\end{array}\right]
+			\end{align*}
+		\subsection{Borne de Cramer-Rao}
+			On déduit directement de la matrice d'information de Fisher la borne de Cramer-Rao
+			\begin{align*}
+				I_\theta^{-1}
+				=
+				\left[\begin{array}{cc}
+					\frac{\sigma^2}{n} & 0 \\
+					0 & \frac{2\sigma^4}{n}]
+				\end{array}\right]
+			\end{align*}
+		\subsection{Loi de l'estimateur $\hat\mu_n$}
+			On a
+			\[ \mathbb{E}[\hat\mu_n] = \frac{1}{n}\sum\limits_{k=1}^n \mu = \mu \]
+			\[ Var[\hat\mu_n] = \frac{1}{n^2} \cdot n \sigma^2 = \frac{\sigma^2}{n} \]
+			Ainsi $\hat\mu_n \sim \mathcal{N}_{\mathbb{R}}(\mu, \frac{\sigma^2}{n})$
+		\subsection{Biais de l'estimateur $\hat\mu_n$}
+			On a
+			\[ \lVert\mu - \mathbb{E}[\hat\mu_n]\rVert^2 = \lVert \mu - \mu \rVert^2 = 0 \]
+		\subsection{Risque quadratique de l'estimateur $\hat\mu_n$}
+			On a
+			\begin{align*}
+				\mathbb{E}[ \lVert \mu - \hat\mu_n \rVert^2 ] &= \int_\mathbb{R} f(t)(\mu - t)dt = \int_\mathbb{R} (\mu - t)^2 \frac{\sqrt n}{\sqrt{2\pi}\sigma}e^{-\frac{1}{2}\frac{(t-\mu)^2 n}{\sigma^2}}dt\\
+			\end{align*}
+			On effectue le changement de variable $u = \frac{t-\mu}{\sqrt 2 \frac{\sigma}{\sqrt n}}$, $du = \frac{\sqrt n}{\sqrt 2 \sigma}dt$
+			\begin{align*}
+				\mathbb{E}[ \lVert \mu - \hat\mu_n \rVert^2 ] &= \frac{2\sigma^2}{n\sqrt \pi}\int_\mathbb{R} u^2 e^{-u^2}du \\
+			\end{align*}
+			On effectue à présent le changement de variable $u=\sqrt y$, $du = \frac{dy}{2 \sqrt y}$
+			\begin{align*}
+				\mathbb{E}[ \lVert \mu - \hat\mu_n \rVert^2 ] &= \frac{\sigma^2}{n\sqrt \pi}\int_\mathbb{R} y^{-\frac{1}{2}} e^{-y}dy = \frac{\sigma^2}{n\sqrt \pi} \Gamma(\frac{1}{2}) = \frac{\sigma^2}{n} \\
+			\end{align*}
+		\subsection{Tracé de l'évolution du risque quadratique de l'estimateur $\hat\mu_n$}
+		\subsection{Loi de l'estimateur $\hat\sigma^2_n$}
+			On a
+			\begin{align*}
+				\hat\sigma^2_n &= \frac{1}{n} \lVert (\mathbb{I} - \frac{1}{n}\textbf{1}\textbf{1}^T)X \rVert = \frac{1}{n} \sum\limits_{k=1}^n (X_k - \frac{1}{n}\sum\limits_{l=1}^n X_l)^2 = \lVert MX \rVert^2
+			\end{align*}
+			Avec
+			\begin{align*}
+				M = \frac{1}{\sqrt n}
+				\left[
+				\begin{array}{cccc}
+					1-\frac{1}{n} & 1 & \cdots & 1 \\
+					1 & \ddots & & \vdots \\
+					\vdots & & \ddots & 1 \\
+					1 &  \cdots & 1 & 1-\frac{1}{n}
+				\end{array}
+				\right]
+			\end{align*}
+			On a $MX = [M_1, \ldots, M_n]^T$ et
+			\[ \forall k, M_k = \frac{1}{\sqrt n}[ (1-\frac{1}{n})X_k -\frac{1}{n}\sum\limits_{\substack{
+            l=1\\
+            l \neq k}}^n X_l ] \]
+            On en déduit l'espérance et la variance de $\hat\sigma^2_n$\\
+            \begin{align*}
+            	\forall k, \mathbb{E}[M_k] &= \frac{1}{\sqrt n}[(1-\frac{1}{n})\mu - \frac{1}{n}\sum\limits_{\substack{
+            	l=1\\
+            	l \neq k}}^n \mu] = \frac{1}{\sqrt n}[ \mu - \frac{1}{n}\mu - \mu + \frac{1}{n}\mu ] = 0 \\
+            	\forall k, Var{E}[M_k] &= \frac{1}{\sqrt n}[(1-\frac{1}{n})\sigma^2 - \frac{1}{n}\sum\limits_{\substack{
+            	l=1\\
+            	l \neq k}}^n \sigma^2] = \frac{\sigma^2}{n}(1-\frac{3}{n}+\frac{2}{n^2})
+            \end{align*}
+            Comme $\sigma^2 = \lVert M \rVert^2 = \sum\limits_{k=1}^n M_k^2$, alors \\
+            $\sigma^2 \sim \chi^2(n)$, avec $\forall k, X_k \sim \mathcal{N}_{R}(0, \frac{\sigma^2}{n}(1-\frac{3}{n}+\frac{2}{n^2}))$
+		\subsection{Biais de l'estimateur $\hat\sigma^2_n$}
+		\subsection{Risque quadratique de l'estimateur $\hat\sigma^2_n$}
+		\subsection{Tracé de l'évolution du risque quadratique de l'estimateur $\hat\sigma^2_n$}
+
+
 \end{document}
