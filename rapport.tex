@@ -65,6 +65,10 @@
 			On a $\forall k$, $X_k \sim \mathcal{N}_{\mathbb{R}}(0, 1)$ indépendantes, ainsi
 			\[ f(X) = f(X_1, \ldots X_n) = \prod\limits_{k=1}^{n}f_k(X_k) = (\frac{1}{\sqrt{2\pi}})^ne^{-\frac{1}{2}\sum\limits_{k=1}^{n}x_k} \]
 		\subsection{Densité de probabilité de la loi $\mathcal{N}_{\mathbb{R}^n}(\mu, \Gamma)$}
+			Pour toutes fonctions $\phi$ bornée, on a
+			\begin{align*}
+				\mathbb{E}[h(Y)] = 
+			\end{align*}
 		\subsection{Montrons que les composantes d'un vecteur gaussien sont indépendantes si et seulement si sa matrice de covariance est diagonale}
 			Si les composantes d'un vecteur gaussien sont indépendantes, alors $\forall i \neq j$ on a $COV(X_i, X_j) = 0$, ainsi, la matrice de covariance a tous ses éléments non diagonaux qui sont nuls. Cette dernière est donc diagonale.\\
 			Réciproquement, si la matrice de covariance est diagonale, alors :
@@ -238,6 +242,18 @@
 		\subsection{Tracé de la densité de probabilité de la loi $\chi^2(n)$}
 			\includegraphics[scale=0.7]{sources/Q252.png} \\
 			Lorsque n est grand, la densité est beaucoup plus étandue.
+		\subsection{Loi du vecteur $U^TX$}
+			On a
+			\[ U^TX = \sum\limits_{i=1}^k <u_i, X>u_i = 
+			\left[
+				\begin{array}{c}
+					u_1^TX \\
+					\vdots \\
+					u_k^TX
+				\end{array}
+			\right] \]
+			Ainsi,
+			\[ \forall i, u_i^TX \sim \mathcal{N}_\mathbb{R}(u_i^T \cdot \textbf{0}, u_i^T \sigma^2 \mathbb{I} u_i) \Leftrightarrow \forall i, u_i^TX \sim \mathcal{N}_\mathbb{R}(0, \sigma^2) \]
 
 \chapter{Estimation paramétrique}
 	\section{Estimation des paramètres d'une loi gaussienne}
@@ -367,5 +383,38 @@
 				\includegraphics[scale=0.7]{sources/Q314-3.png}
 			\end{center}
 
+\chapter{Introduction à la statistique descriptive}
+	\section{Principe de l'ACP}
+		\subsection{Montrons que le vecteur maximisant l'énergie de projection est donné par $u_1$}
+			$\forall v \in \mathbb{C}^d$, tel que $\lVert v \rVert = 1$ on a
+			\begin{align*}
+				\mathbb{E}[(v^TX_k)^2] &= \mathbb{E}[<v^TX_k, v^TX_k>] = \mathbb{E}[v^TX_kX_k^Tv] = v^T\mathbb{E}[X_kX_k^T]v
+				&= v^tRv 
+			\end{align*}
+			R étant diagonalisable, on peut l'écrire sous la forme $R=PDP^{-1}$.\\
+			$P = [\textbf{u}_1, \ldots, \textbf{u}_n]$, de plus, comme P est une matrice orthonormée, on a $P^{-1} = P^T$.\\
+			Ainsi, 
+			\begin{align*}
+				\mathbb{E}[(v^TX_k)^2] &= v^TPDP^Tv = \sum\limits_{k=1}^n \lambda_k<v, u_k>^2\\
+				\mathbb{E}[(v^TX_k)^2] &\leq \lambda_1\sum\limits_{k=1}^n <v, u_k>^2
+			\end{align*}
+			$\forall v \in \mathbb{C}^d$, tel que $\lVert v \rVert = 1$, on a égalité dans l'inégalité large précédente, lorsque $v=u_1$. \\
+			Ainsi, c'est bien le vecteur $u_1$ qui maximise l'énergie de projection et cette dernière vaut $\mathbb{E}[(v^TX_k)^2] = \lambda_1 \lVert u_1 \rVert = \lambda_1$.
+		\subsection{Montrons que le vecteur orthogonal à $u_1$ maximisant l'énergie de projection est donné par $u_2$}
+			On se base sur la relation trouvée précédemment
+			\[ \mathbb{E}[(v^TX_k)^2] = \sum\limits_{k=1}^n \lambda_k<v, u_k>^2 \]
+			On cherche un vecteur $v \in \mathbb{C}^d$, avec $\lVert v \rVert = 1$ et $<v, u_1> = 0$. \\
+			Ainsi, 
+			\[ \mathbb{E}[(v^TX_k)^2] = \sum\limits_{k=2}^n \lambda_k<v, u_k>^2 \leq \lambda_2\sum\limits_{k=2}^n <v, u_k>^2 \]
+			On a égalité lorsque $v=u_2$, donc le vecteur orthogonal à $u_1$ maximisant l'énergie de projection est bien donné par $u_2$ et l'énergie de projection vaut, avec le même raisonnement que précédemment, $\lambda_2$.
+		\subsection{Montrons que le vecteur orthogonal à $u_1, \cdots, u_{l-1}$ maximisant l'énergie de projection est donné par $u_l$}
+			On cherche un vecteur $v \in \mathbb{C}^d$, avec $\lVert v \rVert = 1$ \\
+			et $<v, u_1> = \ldots = <v, u_{l-1}> = 0$. \\
+			Ainsi, 
+			\[ \mathbb{E}[(v^TX_k)^2] = \sum\limits_{k=l}^n \lambda_k<v, u_k>^2 \leq \lambda_l\sum\limits_{k=l}^n <v, u_k>^2 \]
+			On a égalité lorsque $v=u_l$, donc le vecteur orthogonal à $u_1, \cdots, u_{l-1}$ maximisant l'énergie de projection est bien donné par $u_l$ et l'énergie de projection vaut, toujours avec le même raisonnement que précédemment, $\lambda_l$
+
+	\section{ACP et classification d'échantillons gaussiens}
+	\section{ACP et compression d'images}
 
 \end{document}
