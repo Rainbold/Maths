@@ -8,6 +8,9 @@
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{dsfont}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{array}
 
 
 
@@ -165,10 +168,13 @@
 			\end{align*}
 		\subsection{Histogramme de 1000 réalisations de la loi $\mathcal{N}_{\mathbb{C}}(0, 1)$}
 		\includegraphics[scale=0.7]{sources/Q232.png}
+<<<<<<< HEAD
 		\\
 		On remarque ici que la loi suivie est une loi uniforme entre 0 et $2\pi$.\\
 		Ceci ce justifie par le fait que 
 		\[ Arg[f_\theta(x)] = Arg[ \frac{1}{\sigma^2\pi}e^{-\frac{|z-\mu|^2}{\sigma^2}} ] \equiv 0\pmod {2\pi} \]
+=======
+>>>>>>> d9c240afac03a780b53898b503375ba2c98b3585
 	\section{Théorème de la limite centrale}
 		\subsection{Loi de $W_n$ lorsque $X_k \sim \mathcal{N}_{\mathbb{R}}(\mu, \sigma^2)$}
 			On sait que $\forall k, X_k \sim \mathcal{N}_{\mathbb{R}}(0, 1)$, de plus, on a 
@@ -258,8 +264,12 @@
 			On a donc $Var[Y^2] = \sum\limits_{k=1}^n Var[X_k^2] = 2n$, car les variables sont indépendantes.
 		\subsection{Tracé de la densité de probabilité de la loi $\chi^2(n)$}
 			\includegraphics[scale=0.7]{sources/Q252.png} \\
+<<<<<<< HEAD
 			Lorsque n est grand, la densité est beaucoup plus étandue, car on augmente la variance qui est égale à $2n$.\\
 			De plus, la densité est décalée en n (car $\mathbb{E}[X] = n$).
+=======
+			Lorsque n est grand, la densité est beaucoup plus étandue.
+>>>>>>> d9c240afac03a780b53898b503375ba2c98b3585
 		\subsection{Loi du vecteur $U^TX$}
 			On a
 			\[ U^TX = \sum\limits_{i=1}^k <u_i, X>u_i = 
@@ -272,7 +282,10 @@
 			\right] \]
 			Ainsi,
 			\[ \forall i, u_i^TX \sim \mathcal{N}_\mathbb{R}(u_i^T \cdot \textbf{0}, u_i^T \sigma^2 \mathbb{I} u_i) \Leftrightarrow \forall i, u_i^TX \sim \mathcal{N}_\mathbb{R}(0, \sigma^2) \]
+<<<<<<< HEAD
 			On remarque également que les composantes du vecteur $U^TX$ sont dépendantes.
+=======
+>>>>>>> d9c240afac03a780b53898b503375ba2c98b3585
 
 \chapter{Estimation paramétrique}
 	\section{Estimation des paramètres d'une loi gaussienne}
@@ -414,6 +427,7 @@
 				\includegraphics[scale=0.7]{sources/Q314-2.png}
 				\includegraphics[scale=0.7]{sources/Q314-3.png}
 			\end{center}
+<<<<<<< HEAD
 		\subsection{Montrons que les estimateurs $\hat\mu_n$ et $\hat\sigma^2_n$ sont consistants}
 			D'après l'inégalité de Markov, on a
 			\begin{align*}
@@ -423,6 +437,9 @@
 				\forall \epsilon>0, P(\lVert \sigma\mu_n - \sigma\rVert^2 \geq \epsilon) \leq \frac{\sigma^4 - 2\sigma^4(1-\frac{3}{n}+\frac{2}{n^2})^2 + 2\frac{\sigma^4}{n}(1-\frac{3}{n}+\frac{2}{n^2})^4 + \sigma^4(1-\frac{3}{n}+\frac{2}{n^2})^4}{\epsilon} \xrightarrow{\text{n}\xrightarrow{} \infty} 0
 			\end{align*}
 			Les estimateurs sont donc consistants.
+=======
+
+>>>>>>> d9c240afac03a780b53898b503375ba2c98b3585
 \chapter{Introduction à la statistique descriptive}
 	\section{Principe de l'ACP}
 		\subsection{Montrons que le vecteur maximisant l'énergie de projection est donné par $u_1$}
@@ -456,5 +473,61 @@
 
 	\section{ACP et classification d'échantillons gaussiens}
 	\section{ACP et compression d'images}
+<<<<<<< HEAD
+=======
+
+		\subsection{Tracer de l’histogramme des valeurs propres}
+			\includegraphics[scale=0.7]{sources/Q531.png}
+
+		\subsection{Comparaison visuelle des images avec différentes valeurs de $\alpha$}
+			\begin{figure}
+			\begin{center}
+			\includegraphics[scale=0.7]{sources/lena.jpg}
+			\caption{Image source}
+			\end{center}
+			\end{figure}
+
+			\begin{figure}[H]
+        		\begin{center}
+        			\begin{subfigure}{0.5\textwidth}
+		                \includegraphics[width=\textwidth]{sources/Q5_99.jpg}
+                		\caption{$\alpha$ = 0.99}
+        			\end{subfigure}%
+        			~
+    	    		\begin{subfigure}{0.5\textwidth}
+	                	\includegraphics[width=\textwidth]{sources/Q5_9995.jpg}
+		                \caption{$\alpha$ = 0.9995}
+        			\end{subfigure}
+
+        			\begin{subfigure}{0.5\textwidth}
+	                	\includegraphics[width=\textwidth]{sources/Q5_9999.jpg}
+		                \caption{$\alpha$ = 0.9999}
+        			\end{subfigure}%
+        			~
+        			\begin{subfigure}{0.5\textwidth}
+	                	\includegraphics[width=\textwidth]{sources/Q5_99999.jpg}
+		                \caption{$\alpha$ = 0.99999}
+        			\end{subfigure}%
+        			~
+        			\caption{Images compressées}\label{fig:animals}
+        		\end{center}
+			\end{figure}
+			
+			\begin{tabular}{|l|c|r|}
+  			\hline
+  			alpha & Taille de l'image brut & Taille de l'image jpg \\
+  			\hline
+  			0.99 & 1.2 & 1.3 \\
+  			\hline
+  			0.9995 & 2.2 & 2.3 \\
+  			\hline
+  			0.9999 & 2.2 & 2.3 \\
+  			\hline
+  			0.99999 & 2.2 & 2.3 \\
+  			\hline
+  			Source & 2.2 & 2.3 \\
+  			\hline
+			\end{tabular}
+>>>>>>> d9c240afac03a780b53898b503375ba2c98b3585
 
 \end{document}
