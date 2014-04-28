@@ -1,8 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.9.5)  27 APR 2014 17:58
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.9.5)  27 APR 2014 23:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**rapport.tex
+**rapport.tex rapport.aux rapport.log rapport.pdf rapport.tex rapport.toc sourc
+es
 (./rapport.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
@@ -190,45 +191,72 @@ LaTeX Info: Redefining \] on input line 2667.
 (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/dsfont.sty
 Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
 )
-No file rapport.aux.
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2012/02/19 v3.2f Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
+\captionmargin=\dimen122
+\captionmargin@=\dimen123
+\captionwidth=\dimen124
+\caption@indent=\dimen125
+\caption@parindent=\dimen126
+\caption@hangindent=\dimen127
+)
+\c@ContinuedFloat=\count105
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2012/01/12 v1.1d Sub-captions (AR)
+\c@subfigure=\count106
+\c@subtable=\count107
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen128
+\extrarowheight=\dimen129
+\NC@list=\toks27
+\extratabsurround=\skip48
+\backup@length=\skip49
+) (./rapport.aux)
 \openout1 = `rapport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Info: Redefining \degres on input line 19.
-LaTeX Info: Redefining \dots on input line 19.
-LaTeX Info: Redefining \up on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Info: Redefining \degres on input line 22.
+LaTeX Info: Redefining \dots on input line 22.
+LaTeX Info: Redefining \up on input line 22.
+
 
 Package frenchb.ldf Warning: OT1 encoding should not be used for French. 
 (frenchb.ldf)                Add \usepackage[T1]{fontenc} to the preamble
-(frenchb.ldf)                of your document, on input line 19.
+(frenchb.ldf)                of your document, on input line 22.
 
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count105
-\scratchdimen=\dimen122
+\scratchcounter=\count108
+\scratchdimen=\dimen130
 \scratchbox=\box29
-\nofMPsegments=\count106
-\nofMParguments=\count107
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count108
-\MPscratchDim=\dimen123
-\MPnumerator=\count109
-\makeMPintoPDFobject=\count110
-\everyMPtoPDFconversion=\toks28
+\nofMPsegments=\count109
+\nofMParguments=\count110
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count111
+\MPscratchDim=\dimen131
+\MPnumerator=\count112
+\makeMPintoPDFobject=\count113
+\everyMPtoPDFconversion=\toks29
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -277,30 +305,31 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 22.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for U+msa on input line 25.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 22.
+LaTeX Font Info:    Try loading font information for U+msb on input line 25.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-No file rapport.toc.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./rapport.toc)
 \tf@toc=\write3
 \openout3 = `rapport.toc'.
 
-[1
+ [1
 
 ]
 Chapitre 1.
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2012/04/20 UCS: Unicode data U+0000..U+00FF
 )
-Overfull \hbox (5.14168pt too wide) in paragraph at lines 28--28
+Overfull \hbox (5.14168pt too wide) in paragraph at lines 31--31
  |[]\OT1/cmr/bx/n/12 Densit^^Se de prob-a-bilit^^Se d'une vari-able al^^Seatoir
 e gaussi-
  []
@@ -308,7 +337,7 @@ e gaussi-
 <sources/Q211.png, id=13, 418.66759pt x 314.00069pt>
 File: sources/Q211.png Graphic file (type png)
  <use sources/Q211.png>
-Package pdftex.def Info: sources/Q211.png used on input line 35.
+Package pdftex.def Info: sources/Q211.png used on input line 38.
 (pdftex.def)             Requested size: 293.0653pt x 219.79897pt.
 
 [2
@@ -317,13 +346,13 @@ Package pdftex.def Info: sources/Q211.png used on input line 35.
 File: sources/Q212-1.png Graphic file (type png)
 
 <use sources/Q212-1.png>
-Package pdftex.def Info: sources/Q212-1.png used on input line 37.
+Package pdftex.def Info: sources/Q212-1.png used on input line 40.
 (pdftex.def)             Requested size: 293.0653pt x 219.79897pt.
 
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-34.def
 File: uni-34.def 2012/04/20 UCS: Unicode data U+2200..U+22FF
 )
-Underfull \hbox (badness 10000) in paragraph at lines 37--40
+Underfull \hbox (badness 10000) in paragraph at lines 40--43
 
  []
 
@@ -331,22 +360,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--40
 File: sources/Q212-2.png Graphic file (type png)
 
 <use sources/Q212-2.png>
-Package pdftex.def Info: sources/Q212-2.png used on input line 41.
+Package pdftex.def Info: sources/Q212-2.png used on input line 44.
 (pdftex.def)             Requested size: 293.0653pt x 219.79897pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--45
+Underfull \hbox (badness 10000) in paragraph at lines 44--48
 
  []
 
 [3 <./sources/Q211.png (PNG copy)> <./sources/Q212-1.png (PNG copy)>]
-Overfull \hbox (10.47543pt too wide) in paragraph at lines 52--55
+Overfull \hbox (10.47543pt too wide) in paragraph at lines 55--58
 \OT1/cmr/m/n/10 alors les vari-ables al^^Seatoires $\OML/cmm/m/it/10 X[]; [] ; 
 X[]$ \OT1/cmr/m/n/10 seront ind^^Sependantes. Soit $\OML/cmm/m/it/10 X \OMS/cms
 y/m/n/10 ^^X N[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^V; ^^[[]\OT1/cmr/m/n/10 )$
  []
 
 [4 <./sources/Q212-2.png (PNG copy)>]
-Overfull \hbox (11.51646pt too wide) in paragraph at lines 57--62
+Overfull \hbox (11.51646pt too wide) in paragraph at lines 60--65
 \OT1/cmr/m/n/10 De plus, $^^H[](\OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 ) = \OML/cm
 m/m/it/10 e[] \OT1/cmr/m/n/10 = \U/msb/m/n/10 E\OT1/cmr/m/n/10 [\OML/cmm/m/it/1
 0 e[]\OT1/cmr/m/n/10 ]$, donc $[] ^^H[](\OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 ) =
@@ -355,12 +384,12 @@ m/m/it/10 e[] \OT1/cmr/m/n/10 = \U/msb/m/n/10 E\OT1/cmr/m/n/10 [\OML/cmm/m/it/1
  []
 
 
-Overfull \hbox (0.11673pt too wide) in paragraph at lines 72--72
+Overfull \hbox (0.11673pt too wide) in paragraph at lines 75--75
  |[]\OT1/cmr/bx/n/12 Montrons que les com-posantes d'un vecteur gaussien
  []
 
 
-Overfull \hbox (30.2007pt too wide) detected at line 83
+Overfull \hbox (28.53407pt too wide) detected at line 86
 \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X\OT1/cmr/m/n/10 ) = []\OML
 /cmm/m/it/10 e[] \OT1/cmr/m/n/10 = []\OML/cmm/m/it/10 e[]
  []
@@ -369,51 +398,51 @@ Overfull \hbox (30.2007pt too wide) detected at line 83
 File: sources/Q222-1.png Graphic file (type png)
 
 <use sources/Q222-1.png>
-Package pdftex.def Info: sources/Q222-1.png used on input line 87.
+Package pdftex.def Info: sources/Q222-1.png used on input line 90.
 (pdftex.def)             Requested size: 293.0653pt x 219.79897pt.
 
 <sources/Q222-2.png, id=46, 418.66759pt x 314.00069pt>
 File: sources/Q222-2.png Graphic file (type png)
 
 <use sources/Q222-2.png>
-Package pdftex.def Info: sources/Q222-2.png used on input line 89.
+Package pdftex.def Info: sources/Q222-2.png used on input line 92.
 (pdftex.def)             Requested size: 293.0653pt x 219.79897pt.
 
-Overfull \hbox (0.95648pt too wide) detected at line 93
+Overfull \hbox (0.95648pt too wide) detected at line 96
  \U/msb/m/n/10 E\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 UX\OT1/cmr/m/n/10 ] = \U/msb/
 m/n/10 E [] \OT1/cmr/m/n/10 = [] = 0
  []
 
 [6 <./sources/Q222-1.png (PNG copy)> <./sources/Q222-2.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 93--96
+Underfull \hbox (badness 10000) in paragraph at lines 96--99
 
  []
 
 <sources/Q223-1.png, id=52, 495.2987pt x 314.00069pt>
 File: sources/Q223-1.png Graphic file (type png)
  <use sources/Q223-1.png>
-Package pdftex.def Info: sources/Q223-1.png used on input line 104.
+Package pdftex.def Info: sources/Q223-1.png used on input line 107.
 (pdftex.def)             Requested size: 346.70673pt x 219.79897pt.
 
 <sources/Q223-2.png, id=53, 492.18362pt x 314.00069pt>
 File: sources/Q223-2.png Graphic file (type png)
 
 <use sources/Q223-2.png>
-Package pdftex.def Info: sources/Q223-2.png used on input line 105.
+Package pdftex.def Info: sources/Q223-2.png used on input line 108.
 (pdftex.def)             Requested size: 344.52618pt x 219.79897pt.
 
-Overfull \hbox (1.70673pt too wide) in paragraph at lines 104--106
+Overfull \hbox (1.70673pt too wide) in paragraph at lines 107--109
  [] 
  []
 
 [7 <./sources/Q223-1.png (PNG copy)>]
-Overfull \hbox (3.22084pt too wide) in paragraph at lines 107--107
+Overfull \hbox (3.22084pt too wide) in paragraph at lines 110--110
  |[]\OT1/cmr/bx/n/12 D^^Semonstration et v^^Serification exp^^Serimentale du ca
 r-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--115
+Underfull \hbox (badness 10000) in paragraph at lines 111--118
 
  []
 
@@ -421,18 +450,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--115
 <sources/Q224.png, id=61, 418.66759pt x 314.00069pt>
 File: sources/Q224.png Graphic file (type png)
  <use sources/Q224.png>
-Package pdftex.def Info: sources/Q224.png used on input line 137.
+Package pdftex.def Info: sources/Q224.png used on input line 140.
 (pdftex.def)             Requested size: 293.0653pt x 219.79897pt.
 
 [9 <./sources/Q224.png (PNG copy)>]
 <sources/Q232.png, id=66, 418.66759pt x 314.00069pt>
 File: sources/Q232.png Graphic file (type png)
  <use sources/Q232.png>
-Package pdftex.def Info: sources/Q232.png used on input line 154.
+Package pdftex.def Info: sources/Q232.png used on input line 157.
 (pdftex.def)             Requested size: 293.0653pt x 219.79897pt.
 
 [10 <./sources/Q232.png (PNG copy)>]
-Overfull \hbox (3.3213pt too wide) in paragraph at lines 169--169
+Overfull \hbox (3.3213pt too wide) in paragraph at lines 172--172
  |[]\OT1/cmr/bx/n/12 Histogramme de 1000 r^^Sealisations de la loi $\OML/cmm/m/
 it/12 W[]$ \OT1/cmr/bx/n/12 lorsque
  []
@@ -440,140 +469,213 @@ it/12 W[]$ \OT1/cmr/bx/n/12 lorsque
 <sources/Q241.png, id=70, 418.66759pt x 314.00069pt>
 File: sources/Q241.png Graphic file (type png)
  <use sources/Q241.png>
-Package pdftex.def Info: sources/Q241.png used on input line 170.
+Package pdftex.def Info: sources/Q241.png used on input line 173.
 (pdftex.def)             Requested size: 293.0653pt x 219.79897pt.
 
 [11]
-Overfull \hbox (3.3213pt too wide) in paragraph at lines 171--171
+Overfull \hbox (3.3213pt too wide) in paragraph at lines 174--174
  |[]\OT1/cmr/bx/n/12 Histogramme de 1000 r^^Sealisations de la loi $\OML/cmm/m/
 it/12 W[]$ \OT1/cmr/bx/n/12 lorsque
  []
 
-<sources/Q242-1.png, id=74, 314.00069pt x 314.00069pt>
+<sources/Q242-1.png, id=74, 712.73172pt x 314.00069pt>
 File: sources/Q242-1.png Graphic file (type png)
 
 <use sources/Q242-1.png>
-Package pdftex.def Info: sources/Q242-1.png used on input line 173.
-(pdftex.def)             Requested size: 219.79897pt x 219.79897pt.
- [12 <./sources/Q241.png (PNG copy)> <./sources/Q242-1.png>]
-Overfull \hbox (3.3213pt too wide) in paragraph at lines 180--180
+Package pdftex.def Info: sources/Q242-1.png used on input line 176.
+(pdftex.def)             Requested size: 498.9088pt x 219.79897pt.
+
+Overfull \hbox (153.9088pt too wide) in paragraph at lines 176--177
+ [] 
+ []
+
+[12 <./sources/Q241.png (PNG copy)> <./sources/Q242-1.png (PNG copy)>]
+Overfull \hbox (3.3213pt too wide) in paragraph at lines 183--183
  |[]\OT1/cmr/bx/n/12 Histogramme de 1000 r^^Sealisations de la loi $\OML/cmm/m/
 it/12 W[]$ \OT1/cmr/bx/n/12 lorsque
  []
 
-<sources/Q242-2.png, id=81, 314.00069pt x 314.00069pt>
+<sources/Q242-2.png, id=79, 712.73172pt x 314.00069pt>
 File: sources/Q242-2.png Graphic file (type png)
 
 <use sources/Q242-2.png>
-Package pdftex.def Info: sources/Q242-2.png used on input line 182.
-(pdftex.def)             Requested size: 219.79897pt x 219.79897pt.
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 193.
+Package pdftex.def Info: sources/Q242-2.png used on input line 185.
+(pdftex.def)             Requested size: 498.9088pt x 219.79897pt.
 
+Overfull \hbox (153.9088pt too wide) in paragraph at lines 185--186
+ [] 
+ []
+
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 196.
 
 (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-) [13 <./sources/Q242-2.png>] [14] <sources/Q252.png, id=90, 418.66759pt x 314.
-00069pt>
+) [13 <./sources/Q242-2.png (PNG copy)>] [14]
+<sources/Q252.png, id=87, 418.66759pt x 314.00069pt>
 File: sources/Q252.png Graphic file (type png)
-
-<use sources/Q252.png>
-Package pdftex.def Info: sources/Q252.png used on input line 243.
+ <use sources/Q252.png>
+Package pdftex.def Info: sources/Q252.png used on input line 246.
 (pdftex.def)             Requested size: 293.0653pt x 219.79897pt.
- [15] [16 <./sources/Q252.png (PNG copy)>]
+
+[15] [16 <./sources/Q252.png (PNG copy)>]
 Chapitre 2.
 
-Overfull \hbox (38.76526pt too wide) in paragraph at lines 277--277
+Overfull \hbox (38.76526pt too wide) in paragraph at lines 280--280
 [] 
  []
 
 [17
 
-] [18] [19] <sources/Q314-1.png, id=107, 418.66759pt x 314.00069pt>
+] [18] [19] <sources/Q314-1.png, id=104, 418.66759pt x 314.00069pt>
 File: sources/Q314-1.png Graphic file (type png)
 
 <use sources/Q314-1.png>
-Package pdftex.def Info: sources/Q314-1.png used on input line 341.
+Package pdftex.def Info: sources/Q314-1.png used on input line 344.
 (pdftex.def)             Requested size: 293.0653pt x 219.79897pt.
 
-<sources/Q314-2.png, id=108, 418.66759pt x 314.00069pt>
+<sources/Q314-2.png, id=105, 418.66759pt x 314.00069pt>
 File: sources/Q314-2.png Graphic file (type png)
 
 <use sources/Q314-2.png>
-Package pdftex.def Info: sources/Q314-2.png used on input line 342.
+Package pdftex.def Info: sources/Q314-2.png used on input line 345.
 (pdftex.def)             Requested size: 293.0653pt x 219.79897pt.
 
-<sources/Q314-3.png, id=109, 418.66759pt x 314.00069pt>
+<sources/Q314-3.png, id=106, 418.66759pt x 314.00069pt>
 File: sources/Q314-3.png Graphic file (type png)
 
 <use sources/Q314-3.png>
-Package pdftex.def Info: sources/Q314-3.png used on input line 343.
+Package pdftex.def Info: sources/Q314-3.png used on input line 346.
 (pdftex.def)             Requested size: 293.0653pt x 219.79897pt.
  [20] [21 <./sources/Q314-1.png (PNG copy)> <./sources/Q314-2.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 365--367
+Underfull \hbox (badness 10000) in paragraph at lines 368--370
 
  []
 
 [22 <./sources/Q314-3.png (PNG copy)>]
 File: sources/Q314-1.png Graphic file (type png)
  <use sources/Q314-1.png>
-Package pdftex.def Info: sources/Q314-1.png used on input line 381.
+Package pdftex.def Info: sources/Q314-1.png used on input line 384.
 (pdftex.def)             Requested size: 293.0653pt x 219.79897pt.
 File: sources/Q314-2.png Graphic file (type png)
 
 <use sources/Q314-2.png>
-Package pdftex.def Info: sources/Q314-2.png used on input line 382.
+Package pdftex.def Info: sources/Q314-2.png used on input line 385.
 (pdftex.def)             Requested size: 293.0653pt x 219.79897pt.
 File: sources/Q314-3.png Graphic file (type png)
  <use sources/Q314-3.png>
-Package pdftex.def Info: sources/Q314-3.png used on input line 383.
+Package pdftex.def Info: sources/Q314-3.png used on input line 386.
 (pdftex.def)             Requested size: 293.0653pt x 219.79897pt.
  [23] [24] [25]
 Chapitre 3.
 [26
 
 ]
-Overfull \hbox (4.76282pt too wide) in paragraph at lines 417--417
+Overfull \hbox (4.76282pt too wide) in paragraph at lines 420--420
  |[]\OT1/cmr/bx/n/14.4 ACP et clas-si-fi-ca-tion d'^^Sechantillons gaussiens| 
  []
 
-[27] (./rapport.aux) ) 
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
+File: uni-32.def 2012/04/20 UCS: Unicode data U+2000..U+20FF
+)
+<sources/Q531.png, id=129, 418.66759pt x 312.13164pt>
+File: sources/Q531.png Graphic file (type png)
+ <use sources/Q531.png>
+Package pdftex.def Info: sources/Q531.png used on input line 424.
+(pdftex.def)             Requested size: 293.0653pt x 218.49065pt.
+
+[27]
+Overfull \hbox (20.8667pt too wide) in paragraph at lines 426--426
+ |[]\OT1/cmr/bx/n/12 Comparaison vi-suelle des im-ages avec diff^^Serentes vale
+urs
+ []
+
+<sources/lena.jpg, id=134, 513.92pt x 513.92pt>
+File: sources/lena.jpg Graphic file (type jpg)
+ <use sources/lena.jpg>
+Package pdftex.def Info: sources/lena.jpg used on input line 429.
+(pdftex.def)             Requested size: 359.74153pt x 359.74153pt.
+
+Overfull \hbox (14.74153pt too wide) in paragraph at lines 429--430
+ [] 
+ []
+
+<sources/Q5_99.jpg, id=135, 513.92pt x 513.92pt>
+File: sources/Q5_99.jpg Graphic file (type jpg)
+ <use sources/Q5_99.jpg>
+Package pdftex.def Info: sources/Q5_99.jpg used on input line 437.
+(pdftex.def)             Requested size: 172.5pt x 172.50342pt.
+
+<sources/Q5_9995.jpg, id=136, 513.92pt x 513.92pt>
+File: sources/Q5_9995.jpg Graphic file (type jpg)
+ <use sources/Q5_9995.jpg>
+Package pdftex.def Info: sources/Q5_9995.jpg used on input line 442.
+(pdftex.def)             Requested size: 172.5pt x 172.50342pt.
+
+Overfull \hbox (4.44443pt too wide) in paragraph at lines 436--445
+ []$  $[]$ 
+ []
+
+<sources/Q5_9999.jpg, id=137, 513.92pt x 513.92pt>
+File: sources/Q5_9999.jpg Graphic file (type jpg)
+ <use sources/Q5_9999.jpg>
+Package pdftex.def Info: sources/Q5_9999.jpg used on input line 447.
+(pdftex.def)             Requested size: 172.5pt x 172.50342pt.
+
+<sources/Q5_99999.jpg, id=138, 513.92pt x 513.92pt>
+File: sources/Q5_99999.jpg Graphic file (type jpg)
+ <use sources/Q5_99999.jpg>
+Package pdftex.def Info: sources/Q5_99999.jpg used on input line 452.
+(pdftex.def)             Requested size: 172.5pt x 172.50342pt.
+
+Overfull \hbox (6.66664pt too wide) in paragraph at lines 446--456
+ []$[]$  $[]$  
+ []
+
+[28 <./sources/Q531.png (PNG copy)>] [29 <./sources/lena.jpg>] [30 <./sources/Q
+5_99.jpg> <./sources/Q5_9995.jpg> <./sources/Q5_9999.jpg> <./sources/Q5_99999.j
+pg>] (./rapport.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4792 strings out of 495059
- 62908 string characters out of 3182031
- 127465 words of memory out of 3000000
- 7875 multiletter control sequences out of 15000+200000
- 15765 words of font info for 64 fonts, out of 3000000 for 9000
+ 6194 strings out of 495059
+ 86178 string characters out of 3182031
+ 148399 words of memory out of 3000000
+ 9248 multiletter control sequences out of 15000+200000
+ 17707 words of font info for 72 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,16n,33p,356b,541s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/doublestroke/dsrom10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/symbols/msbm5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/symbols/msbm7.pfb>
-Output written on rapport.pdf (28 pages, 396935 bytes).
+ 38i,16n,38p,424b,542s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm5.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on rapport.pdf (31 pages, 580914 bytes).
 PDF statistics:
- 218 PDF objects out of 1000 (max. 8388607)
- 142 compressed objects within 2 object streams
+ 239 PDF objects out of 1000 (max. 8388607)
+ 154 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
 

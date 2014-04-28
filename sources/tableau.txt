@@ -1,0 +1,6 @@
+aplha	size in matlab		size in windows
+0.99	4 608 B			11 Ko
+0.9995	6 144 B			16,6 Ko
+0.9999	29 696 B		25,4 Ko
+0.99999	115 712 B		32,3 Ko
+source	262 144 B		64,0 Ko
