@@ -24,7 +24,6 @@
 \tableofcontents
 
 \chapter{Autour des variables aléatoires gaussiennes}
-
 	\section{Variables aléatoires gaussiennes réelles}
 		\subsection{Densité de probabilité d'une variable aléatoire gaussienne de de moyenne $\mu$ et de variance $\sigma^2$}
 			La densité de probabilité d'une loi normale de moyenne 0 et de variance 1 est :
@@ -33,10 +32,17 @@
 			\[\int f(x)dx = \int \frac{1}{\sqrt{2\pi}} \cdot exp(-\frac{x^2}{2})dx = \int \frac{1}{\sqrt{2\pi}} \cdot exp(-\frac{(y-\mu)^2}{2\cdot \sigma^2})\frac{dy}{\sigma} = \int f(y)dy \]
 			Ainsi, on a la densité de probabilité $f(y)$ recherchée :
 			\[f(y) = \frac{1}{\sqrt{2\pi \sigma}} \cdot exp(-\frac{(y-\mu)^2}{2\cdot \sigma^2}) \]
+			\includegraphics[scale=0.7]{sources/Q211.png} 
 		\subsection{Histogramme de 100 réalisations de la loi $\mathcal{N}_{\mathbb{R}}(5, 1)$}
+			\includegraphics[scale=0.7]{sources/Q212-1.png} \\
+			La proportion empirique entre [$\mu$ − $\sigma$, $\mu$ + $\sigma$] est égale à 63. \\
+			La proportion empirique entre [$\mu$ − 3 $\sigma$, $\mu$ + 3 $\sigma$] est égale à 100. \\
 		\subsection{Histogramme de 1000 réalisations de la loi $\mathcal{N}_{\mathbb{R}}(5, 1)$}
+			\includegraphics[scale=0.7]{sources/Q212-2.png} \\
+			La proportion empirique entre [$\mu$ − $\sigma$, $\mu$ + $\sigma$] est égale à 713. \\
+			La proportion empirique entre [$\mu$ − 3 $\sigma$, $\mu$ + 3 $\sigma$] est égale à 998. \\
+			On remarque que plus le nombre de réalisations est grand, moins ces valeurs empiriques sont aléatoires, et plus elles convergent vers les valeurs théoriques vues en cours. \\
 
-		
 	\section{Variables aléatoires gaussiennes vectorielles}
 		\subsection{Fonction caractéristique de la variable $t^TX$}
 			On a 
@@ -57,12 +63,25 @@
 			Donc les variables aléatoires $X_1, \ldots, X_n$ sont indépendantes.
 		\subsection{Densité de probabilité de la loi $\mathcal{N}_{\mathbb{R}^n}(0, I)$}
 			On a $\forall k$, $X_k \sim \mathcal{N}_{\mathbb{R}}(0, 1)$ indépendantes, ainsi
-			\[ f(X) = f(X_1, \ldots X_n) = \prod\limits_{k=1}^{n}f_k(X_k) = (\frac{1}{\sqrt{2\pi}})^ne^{-\frac{1}{2}\sum\limits_{k=1}^{n}x_k} \]
+			\[ f(X) = f(X_1, \ldots X_n) = \prod\limits_{k=1}^{n}f_k(X_k) = (\frac{1}{\sqrt{2\pi}})^ne^{-\frac{1}{2}\sum\limits_{k=1}^{n}x_k^2} \]
 		\subsection{Densité de probabilité de la loi $\mathcal{N}_{\mathbb{R}^n}(\mu, \Gamma)$}
 			Pour toutes fonctions $\phi$ bornée, on a
+			On sait que la densité de probabilité de $X \sim \mathcal{N}_{\mathbb{R}^n}(0, I) est $
+			\[ f(X) = (\frac{1}{\sqrt{2\pi}})^ne^{-\frac{1}{2}\sum\limits_{k=1}^{n}x_k^2} = (\frac{1}{\sqrt{2\pi}})^ne^{-\frac{1}{2} \lVert x \rVert^2}  \]
+			On a 
 			\begin{align*}
-				\mathbb{E}[h(Y)] = 
+				\int_\mathbb{R} \ldots \int_\mathbb{R} f(\textbf{x}) dx_1 \ldots dx_n &= \int_\mathbb{R} \ldots \int_\mathbb{R} (\frac{1}{\sqrt{2\pi}})^ne^{-\frac{1}{2} \lVert \textbf{x} \rVert^2} d\textbf{x}
 			\end{align*}
+			On effectue le changement de variable $\textbf{y} = \Gamma^{\frac{1}{2}} \textbf{x} + \mu \Leftrightarrow \textbf{x} = \Gamma^{-\frac{1}{2}}(\textbf{y} - \mu)$, $d\textbf{x} = |\Gamma|^{-\frac{1}{2}}$, avec $\Gamma$ la matrice de covariance de x et $\mu$ son espérance.\\
+			Ce changement de variable peut s'expliquer par le fait qu'on effectue un changement de variable de la forme $x = \sigma y + \mu$ pour chaque composante du vecteur $\textbf{x}$.\\
+			\begin{align*}
+				\int_\mathbb{R} \ldots \int_\mathbb{R} \frac{1}{\sqrt{2\pi}^n}e^{-\frac{1}{2} \lVert \Gamma^{-\frac{1}{2}}(\textbf{y} - \mu) \rVert^2} |\Gamma|^{-\frac{1}{2}} d\textbf{y} &= \int_\mathbb{R} \ldots \int_\mathbb{R} \frac{1}{\sqrt{2\pi}^n |\Gamma|^{\frac{1}{2}}}e^{-\frac{1}{2} \lVert \Gamma^{-\frac{1}{2}}(\textbf{y} - \mu) \rVert^2} d\textbf{y}\\
+				&= \int_\mathbb{R} \ldots \int_\mathbb{R} \frac{1}{\sqrt{2\pi}^n |\Gamma|^{\frac{1}{2}}}e^{-\frac{1}{2} (\textbf{y} - \mu)^T(\Gamma^{-\frac{1}{2}})^T\Gamma^{-\frac{1}{2}}(\textbf{y} - \mu) } d\textbf{y}\\
+				&= \int_\mathbb{R} \ldots \int_\mathbb{R} \frac{1}{\sqrt{2\pi}^n |\Gamma|^{\frac{1}{2}}}e^{-\frac{1}{2} (\textbf{y} - \mu)^T\Gamma^{-1}(\textbf{y} - \mu) } d\textbf{y}
+			\end{align*}
+			Ainsi, la densité de probabilité de la loi $\mathcal{N}_{\mathbb{R}^n}(\mu, \Gamma)$ est
+			\[ f(\textbf{x}) = \frac{1}{\sqrt{2\pi}^n |\Gamma|^{\frac{1}{2}}}e^{-\frac{1}{2} (\textbf{y} - \mu)^T\Gamma^{-1}(\textbf{y} - \mu) } \]
+
 		\subsection{Montrons que les composantes d'un vecteur gaussien sont indépendantes si et seulement si sa matrice de covariance est diagonale}
 			Si les composantes d'un vecteur gaussien sont indépendantes, alors $\forall i \neq j$ on a $COV(X_i, X_j) = 0$, ainsi, la matrice de covariance a tous ses éléments non diagonaux qui sont nuls. Cette dernière est donc diagonale.\\
 			Réciproquement, si la matrice de covariance est diagonale, alors :
@@ -78,8 +97,9 @@
 			On a bien $\prod\limits f_k(X_k) = f(X)$, les variables sont donc indépendantes.
 
 		\subsection{Tracé de la densité de la loi $\mathcal{N}_{\mathbb{R}^2}(\mu, \Gamma)$}
+			\includegraphics[scale=0.7]{sources/Q222-1.png}
 		\subsection{Histogramme de 1000 réalisations de la loi $\mathcal{N}_{\mathbb{R}^2}(\mu, \Gamma)$}
-		
+			\includegraphics[scale=0.7]{sources/Q222-2.png}
 		\subsection{Montrons que $X \sim \mathcal{N}_{\mathbb{R}^d}(0, I) \Rightarrow UX \sim \mathcal{N}_{\mathbb{R}^d}(0, I), \forall U \in \mathbb{O}_d(\mathbb{R})$}
 			On a $UX = [a_1, \ldots, a_d]$, avec $\forall k, a_k = \sum\limits_{i=1}^d u_{ki}X_i$.\\
 			Calculons l'espérance de ce vecteur : 
@@ -93,7 +113,10 @@
 			Nous avons donc montré que $X \sim \mathcal{N}_{\mathbb{R}^d}(0, I) \Rightarrow UX \sim \mathcal{N}_{\mathbb{R}^d}(0, I), \forall U \in \mathbb{O}_d(\mathbb{R})$.
 
 		\subsection{Histogramme de 1000 réalisations du vecteur $UX$}
-		
+			\begin{center}
+				\includegraphics[scale=0.7]{sources/Q223-1.png}
+				\includegraphics[scale=0.7]{sources/Q223-2.png}
+			\end{center}
 		\subsection{Démonstration et vérification expérimentale du caractère gaussien d'un vecteur donné}
 			On a $X \sim \mathcal{N}_{\mathbb{R}}(0, 1)$.\\
 			On pose $\textbf{X} = [X_1, X_2]^T$, avec $X_1 = X et X_2 = ZX$.
@@ -123,7 +146,8 @@
 			Calculons sa fonction caractéristique.
 			\[ \Phi_{\textbf{X}}(u) = \mathbb{E}(e^{i<u,X>}) = \int_{\mathbb{R}}\int_{\mathbb{R}}f_{\textbf{X}}(x,z)e^{iu_1x + iu_2xz}dxdz \]
 			$X$ et $ZX$ n'étant pas indépendant, on ne peut retrouver la bonne fonction caractéristique.\\
-			Le vecteur $\textbf{X}$ n'est donc pas gaussien.
+			Le vecteur $\textbf{X}$ n'est donc pas gaussien. \\
+			\includegraphics[scale=0.7]{sources/Q224.png}
 	\section{Variables aléatoires gaussiennes complexes}
 		\subsection{Variance et densité de probabilité de $Z \sim \mathcal{N}_{\mathbb{C}}(\mu, \sigma^2)$}
 			Calculons la variance de la variable aléatoire $Z = X + iY$.
@@ -140,7 +164,11 @@
 				&= \frac{1}{\sigma^2\pi}e^{-\frac{|z-\mu|^2}{\sigma^2}}
 			\end{align*}
 		\subsection{Histogramme de 1000 réalisations de la loi $\mathcal{N}_{\mathbb{C}}(0, 1)$}
-		
+		\includegraphics[scale=0.7]{sources/Q232.png}
+		\\
+		On remarque ici que la loi suivie est une loi uniforme entre 0 et $2\pi$.\\
+		Ceci ce justifie par le fait que 
+		\[ Arg[f_\theta(x)] = Arg[ \frac{1}{\sigma^2\pi}e^{-\frac{|z-\mu|^2}{\sigma^2}} ] \equiv 0\pmod {2\pi} \]
 	\section{Théorème de la limite centrale}
 		\subsection{Loi de $W_n$ lorsque $X_k \sim \mathcal{N}_{\mathbb{R}}(\mu, \sigma^2)$}
 			On sait que $\forall k, X_k \sim \mathcal{N}_{\mathbb{R}}(0, 1)$, de plus, on a 
@@ -156,13 +184,20 @@
 			Ainsi
 			\[ W_n = \sum\limits_{k=1}^n Y_k \sim \mathcal{N}_{\mathbb{R}}(0, \sqrt{\sum\limits_{k=1}^n\frac{1}{n}} = 1) \]
 		\subsection{Histogramme de 1000 réalisations de la loi $W_n$ lorsque $X_k \sim \mathcal{N}_{\mathbb{R}}(\mu, \sigma^2)$}
+			\includegraphics[scale=0.7]{sources/Q241.png}
 		\subsection{Histogramme de 1000 réalisations de la loi $W_n$ lorsque $X_k \sim \mathcal{U}([0,1])$}
+			\begin{center}
+				\includegraphics[scale=0.7]{sources/Q242-1.png}
+			\end{center}
 		Calcul de l'espérance et de la variance de $X_k, \forall k$
 		\begin{align*}
 			\mathbb{E}[X_k] &= \int\limits_0^1 x dx = \frac{1}{2}\\
 			Var[X_k] &= \mathbb{E}[X_k^2] - \mathbb{E}^2[X_k] = \frac{1}{3} - \frac{1}{4} = \frac{1}{12}
 		\end{align*}
 		\subsection{Histogramme de 1000 réalisations de la loi $W_n$ lorsque $X_k \sim \mathcal{B}(\frac{1}{2}) $}
+			\begin{center}
+				\includegraphics[scale=0.7]{sources/Q242-2.png}
+			\end{center}
 		Calcul de l'espérance et de la variance de $X_k, \forall k$
 		\begin{align*}
 			\mathbb{E}[X_k] &= p = \frac{1}{2}\\
@@ -222,6 +257,9 @@
 			\end{align*}
 			On a donc $Var[Y^2] = \sum\limits_{k=1}^n Var[X_k^2] = 2n$, car les variables sont indépendantes.
 		\subsection{Tracé de la densité de probabilité de la loi $\chi^2(n)$}
+			\includegraphics[scale=0.7]{sources/Q252.png} \\
+			Lorsque n est grand, la densité est beaucoup plus étandue, car on augmente la variance qui est égale à $2n$.\\
+			De plus, la densité est décalée en n (car $\mathbb{E}[X] = n$).
 		\subsection{Loi du vecteur $U^TX$}
 			On a
 			\[ U^TX = \sum\limits_{i=1}^k <u_i, X>u_i = 
@@ -234,7 +272,7 @@
 			\right] \]
 			Ainsi,
 			\[ \forall i, u_i^TX \sim \mathcal{N}_\mathbb{R}(u_i^T \cdot \textbf{0}, u_i^T \sigma^2 \mathbb{I} u_i) \Leftrightarrow \forall i, u_i^TX \sim \mathcal{N}_\mathbb{R}(0, \sigma^2) \]
-
+			On remarque également que les composantes du vecteur $U^TX$ sont dépendantes.
 
 \chapter{Estimation paramétrique}
 	\section{Estimation des paramètres d'une loi gaussienne}
@@ -283,7 +321,7 @@
 				=
 				\left[\begin{array}{cc}
 					\frac{n}{\sigma^2} & 0 \\
-					0 & \frac{n}{2\sigma^4}]
+					0 & \frac{n}{2\sigma^4}
 				\end{array}\right]
 			\end{align*}
 		\subsection{Borne de Cramer-Rao}
@@ -293,7 +331,7 @@
 				=
 				\left[\begin{array}{cc}
 					\frac{\sigma^2}{n} & 0 \\
-					0 & \frac{2\sigma^4}{n}]
+					0 & \frac{2\sigma^4}{n}
 				\end{array}\right]
 			\end{align*}
 		\subsection{Loi de l'estimateur $\hat\mu_n$}
@@ -318,6 +356,11 @@
 				\mathbb{E}[ \lVert \mu - \hat\mu_n \rVert^2 ] &= \frac{\sigma^2}{n\sqrt \pi}\int_\mathbb{R} y^{-\frac{1}{2}} e^{-y}dy = \frac{\sigma^2}{n\sqrt \pi} \Gamma(\frac{1}{2}) = \frac{\sigma^2}{n} \\
 			\end{align*}
 		\subsection{Tracé de l'évolution du risque quadratique de l'estimateur $\hat\mu_n$}
+		\begin{center}
+			\includegraphics[scale=0.7]{sources/Q314-1.png}
+			\includegraphics[scale=0.7]{sources/Q314-2.png}
+			\includegraphics[scale=0.7]{sources/Q314-3.png}
+		\end{center}
 		\subsection{Loi de l'estimateur $\hat\sigma^2_n$}
 			On a
 			\begin{align*}
@@ -349,11 +392,37 @@
             	l \neq k}}^n \sigma^2] = \frac{\sigma^2}{n}(1-\frac{3}{n}+\frac{2}{n^2})
             \end{align*}
             Comme $\sigma^2 = \lVert M \rVert^2 = \sum\limits_{k=1}^n M_k^2$, alors \\
-            $\sigma^2 \sim \chi^2(n)$, avec $\forall k, X_k \sim \mathcal{N}_{R}(0, \frac{\sigma^2}{n}(1-\frac{3}{n}+\frac{2}{n^2}))$
+            $\sigma^2 \sim \chi^2(n)$, avec $\forall k, X_k \sim \mathcal{N}_{R}(0, \frac{\sigma^2}{n}(1-\frac{3}{n}+\frac{2}{n^2}))$\\
+            On pose $v^2 = \frac{\sigma^2}{n}(1-\frac{3}{n}+\frac{2}{n^2})$\\
+            On sait que $\mathbb{E}[\sum\limits_{k=1}^n Y_i^2] = n$, donc $\mathbb{E}[\hat\sigma^2_n] = \mathbb{E}[\sum\limits_{k=1}^n (v Y_i)^2] = v^2n$\\
+            De même, $Var[\sum\limits_{k=1}^n Y_i^2] =  2n$, donc $Var[\hat\sigma^2_n] = Var[\sum\limits_{k=1}^n (v Y_i)^2] = 2v^2n $
 		\subsection{Biais de l'estimateur $\hat\sigma^2_n$}
+            On a 
+            \[ \lVert\sigma^2 - \mathbb{E}[\hat\sigma^2_n]\rVert^2 = \lVert \sigma^2 - v^2n \rVert^2 = (\sigma^2 - v^2n)^2 = \frac{\sigma^4}{n^2}(3-\frac{2}{n}) \]
+            Si l'on veut réduire le biais, il suffit de prendre un très grand nombre d'échantillons.
 		\subsection{Risque quadratique de l'estimateur $\hat\sigma^2_n$}
+			On a
+			\begin{align*}
+				\mathbb{E}[ \lVert\sigma^2 - \hat\sigma^2_n\rVert^2 ] &= \mathbb{E}[\sigma^4 - 2\sigma^2\hat\sigma^2_n + \hat\sigma^4_n] \\
+				&= \sigma^4 - 2\sigma^2v^2n + Var[\hat\sigma^2_n]+\mathbb{E}^2[\hat\sigma^2_n]\\
+				&= \sigma^4 - 2\sigma^2v^2n + 2v^4n + v^4n^2\\
+				&= \sigma^4 - 2\sigma^4(1-\frac{3}{n}+\frac{2}{n^2})^2 + 2\frac{\sigma^4}{n}(1-\frac{3}{n}+\frac{2}{n^2})^4 + \sigma^4(1-\frac{3}{n}+\frac{2}{n^2})^4
+			\end{align*}
 		\subsection{Tracé de l'évolution du risque quadratique de l'estimateur $\hat\sigma^2_n$}
-
+			\begin{center}
+				\includegraphics[scale=0.7]{sources/Q314-1.png}
+				\includegraphics[scale=0.7]{sources/Q314-2.png}
+				\includegraphics[scale=0.7]{sources/Q314-3.png}
+			\end{center}
+		\subsection{Montrons que les estimateurs $\hat\mu_n$ et $\hat\sigma^2_n$ sont consistants}
+			D'après l'inégalité de Markov, on a
+			\begin{align*}
+				\forall \epsilon>0, P(\lVert \hat\mu_n - \mu \rVert^2 \geq \epsilon) \leq \frac{\mathbb{E}[\lVert \hat\mu_n - \mu \rVert^2]}{\epsilon} = \frac{\sigma^2}{n\epsilon} \xrightarrow{\text{n}\xrightarrow{} \infty} 0
+			\end{align*}
+			\begin{align*}
+				\forall \epsilon>0, P(\lVert \sigma\mu_n - \sigma\rVert^2 \geq \epsilon) \leq \frac{\sigma^4 - 2\sigma^4(1-\frac{3}{n}+\frac{2}{n^2})^2 + 2\frac{\sigma^4}{n}(1-\frac{3}{n}+\frac{2}{n^2})^4 + \sigma^4(1-\frac{3}{n}+\frac{2}{n^2})^4}{\epsilon} \xrightarrow{\text{n}\xrightarrow{} \infty} 0
+			\end{align*}
+			Les estimateurs sont donc consistants.
 \chapter{Introduction à la statistique descriptive}
 	\section{Principe de l'ACP}
 		\subsection{Montrons que le vecteur maximisant l'énergie de projection est donné par $u_1$}
@@ -387,6 +456,5 @@
 
 	\section{ACP et classification d'échantillons gaussiens}
 	\section{ACP et compression d'images}
-	
 
 \end{document}
