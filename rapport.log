@@ -1,9 +1,8 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.9.5)  27 APR 2014 23:46
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.9.5)  28 APR 2014 09:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**rapport.tex rapport.aux rapport.log rapport.pdf rapport.tex rapport.toc sourc
-es
+**rapport.tex
 (./rapport.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
@@ -318,31 +317,44 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 25.
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./rapport.toc)
-\tf@toc=\write3
-\openout3 = `rapport.toc'.
-
- [1
-
-]
-Chapitre 1.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./rapport.toc
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2012/04/20 UCS: Unicode data U+0000..U+00FF
 )
+Overfull \hbox (0.74408pt too wide) in paragraph at lines 2--2
+ [] []\OT1/cmr/bx/n/10 Autour des vari-ables al[Pleaseinsertintopreamble]atoire
+s gaussi- 
+ []
+
+[1
+
+]
+Overfull \hbox (12.87798pt too wide) in paragraph at lines 47--47
+ [][] []\OT1/cmr/m/n/10 Montrons que le vecteur or-thog-o-nal ^^Ra $\OML/cmm/m/
+it/10 u[]$ \OT1/cmr/m/n/10 max-imisant l'^^Senergie 
+ []
+
+)
+\tf@toc=\write3
+\openout3 = `rapport.toc'.
+
+ [2]
+Chapitre 1.
+
 Overfull \hbox (5.14168pt too wide) in paragraph at lines 31--31
  |[]\OT1/cmr/bx/n/12 Densit^^Se de prob-a-bilit^^Se d'une vari-able al^^Seatoir
 e gaussi-
  []
 
-<sources/Q211.png, id=13, 418.66759pt x 314.00069pt>
+<sources/Q211.png, id=26, 418.66759pt x 314.00069pt>
 File: sources/Q211.png Graphic file (type png)
  <use sources/Q211.png>
 Package pdftex.def Info: sources/Q211.png used on input line 38.
 (pdftex.def)             Requested size: 293.0653pt x 219.79897pt.
 
-[2
+[3
 
-] <sources/Q212-1.png, id=25, 418.66759pt x 314.00069pt>
+] <sources/Q212-1.png, id=33, 418.66759pt x 314.00069pt>
 File: sources/Q212-1.png Graphic file (type png)
 
 <use sources/Q212-1.png>
@@ -356,7 +368,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--43
 
  []
 
-<sources/Q212-2.png, id=26, 418.66759pt x 314.00069pt>
+<sources/Q212-2.png, id=34, 418.66759pt x 314.00069pt>
 File: sources/Q212-2.png Graphic file (type png)
 
 <use sources/Q212-2.png>
@@ -367,14 +379,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--48
 
  []
 
-[3 <./sources/Q211.png (PNG copy)> <./sources/Q212-1.png (PNG copy)>]
+[4 <./sources/Q211.png (PNG copy)> <./sources/Q212-1.png (PNG copy)>]
 Overfull \hbox (10.47543pt too wide) in paragraph at lines 55--58
 \OT1/cmr/m/n/10 alors les vari-ables al^^Seatoires $\OML/cmm/m/it/10 X[]; [] ; 
 X[]$ \OT1/cmr/m/n/10 seront ind^^Sependantes. Soit $\OML/cmm/m/it/10 X \OMS/cms
 y/m/n/10 ^^X N[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^V; ^^[[]\OT1/cmr/m/n/10 )$
  []
 
-[4 <./sources/Q212-2.png (PNG copy)>]
+[5 <./sources/Q212-2.png (PNG copy)>]
 Overfull \hbox (11.51646pt too wide) in paragraph at lines 60--65
 \OT1/cmr/m/n/10 De plus, $^^H[](\OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 ) = \OML/cm
 m/m/it/10 e[] \OT1/cmr/m/n/10 = \U/msb/m/n/10 E\OT1/cmr/m/n/10 [\OML/cmm/m/it/1
@@ -394,14 +406,14 @@ Overfull \hbox (28.53407pt too wide) detected at line 86
 /cmm/m/it/10 e[] \OT1/cmr/m/n/10 = []\OML/cmm/m/it/10 e[]
  []
 
-[5] <sources/Q222-1.png, id=45, 418.66759pt x 314.00069pt>
+[6] <sources/Q222-1.png, id=50, 418.66759pt x 314.00069pt>
 File: sources/Q222-1.png Graphic file (type png)
 
 <use sources/Q222-1.png>
 Package pdftex.def Info: sources/Q222-1.png used on input line 90.
 (pdftex.def)             Requested size: 293.0653pt x 219.79897pt.
 
-<sources/Q222-2.png, id=46, 418.66759pt x 314.00069pt>
+<sources/Q222-2.png, id=51, 418.66759pt x 314.00069pt>
 File: sources/Q222-2.png Graphic file (type png)
 
 <use sources/Q222-2.png>
@@ -413,18 +425,18 @@ Overfull \hbox (0.95648pt too wide) detected at line 96
 m/n/10 E [] \OT1/cmr/m/n/10 = [] = 0
  []
 
-[6 <./sources/Q222-1.png (PNG copy)> <./sources/Q222-2.png (PNG copy)>]
+[7 <./sources/Q222-1.png (PNG copy)> <./sources/Q222-2.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 96--99
 
  []
 
-<sources/Q223-1.png, id=52, 495.2987pt x 314.00069pt>
+<sources/Q223-1.png, id=56, 495.2987pt x 314.00069pt>
 File: sources/Q223-1.png Graphic file (type png)
  <use sources/Q223-1.png>
 Package pdftex.def Info: sources/Q223-1.png used on input line 107.
 (pdftex.def)             Requested size: 346.70673pt x 219.79897pt.
 
-<sources/Q223-2.png, id=53, 492.18362pt x 314.00069pt>
+<sources/Q223-2.png, id=57, 492.18362pt x 314.00069pt>
 File: sources/Q223-2.png Graphic file (type png)
 
 <use sources/Q223-2.png>
@@ -435,7 +447,7 @@ Overfull \hbox (1.70673pt too wide) in paragraph at lines 107--109
  [] 
  []
 
-[7 <./sources/Q223-1.png (PNG copy)>]
+[8 <./sources/Q223-1.png (PNG copy)>]
 Overfull \hbox (3.22084pt too wide) in paragraph at lines 110--110
  |[]\OT1/cmr/bx/n/12 D^^Semonstration et v^^Serification exp^^Serimentale du ca
 r-
@@ -446,39 +458,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--118
 
  []
 
-[8 <./sources/Q223-2.png (PNG copy)>]
-<sources/Q224.png, id=61, 418.66759pt x 314.00069pt>
+[9 <./sources/Q223-2.png (PNG copy)>]
+<sources/Q224.png, id=64, 418.66759pt x 314.00069pt>
 File: sources/Q224.png Graphic file (type png)
  <use sources/Q224.png>
 Package pdftex.def Info: sources/Q224.png used on input line 140.
 (pdftex.def)             Requested size: 293.0653pt x 219.79897pt.
 
-[9 <./sources/Q224.png (PNG copy)>]
-<sources/Q232.png, id=66, 418.66759pt x 314.00069pt>
+[10 <./sources/Q224.png (PNG copy)>]
+<sources/Q232.png, id=69, 418.66759pt x 314.00069pt>
 File: sources/Q232.png Graphic file (type png)
  <use sources/Q232.png>
 Package pdftex.def Info: sources/Q232.png used on input line 157.
 (pdftex.def)             Requested size: 293.0653pt x 219.79897pt.
 
-[10 <./sources/Q232.png (PNG copy)>]
+[11 <./sources/Q232.png (PNG copy)>]
 Overfull \hbox (3.3213pt too wide) in paragraph at lines 172--172
  |[]\OT1/cmr/bx/n/12 Histogramme de 1000 r^^Sealisations de la loi $\OML/cmm/m/
 it/12 W[]$ \OT1/cmr/bx/n/12 lorsque
  []
 
-<sources/Q241.png, id=70, 418.66759pt x 314.00069pt>
+<sources/Q241.png, id=73, 418.66759pt x 314.00069pt>
 File: sources/Q241.png Graphic file (type png)
  <use sources/Q241.png>
 Package pdftex.def Info: sources/Q241.png used on input line 173.
 (pdftex.def)             Requested size: 293.0653pt x 219.79897pt.
 
-[11]
+[12]
 Overfull \hbox (3.3213pt too wide) in paragraph at lines 174--174
  |[]\OT1/cmr/bx/n/12 Histogramme de 1000 r^^Sealisations de la loi $\OML/cmm/m/
 it/12 W[]$ \OT1/cmr/bx/n/12 lorsque
  []
 
-<sources/Q242-1.png, id=74, 712.73172pt x 314.00069pt>
+<sources/Q242-1.png, id=78, 712.73172pt x 314.00069pt>
 File: sources/Q242-1.png Graphic file (type png)
 
 <use sources/Q242-1.png>
@@ -489,13 +501,13 @@ Overfull \hbox (153.9088pt too wide) in paragraph at lines 176--177
  [] 
  []
 
-[12 <./sources/Q241.png (PNG copy)> <./sources/Q242-1.png (PNG copy)>]
+[13 <./sources/Q241.png (PNG copy)> <./sources/Q242-1.png (PNG copy)>]
 Overfull \hbox (3.3213pt too wide) in paragraph at lines 183--183
  |[]\OT1/cmr/bx/n/12 Histogramme de 1000 r^^Sealisations de la loi $\OML/cmm/m/
 it/12 W[]$ \OT1/cmr/bx/n/12 lorsque
  []
 
-<sources/Q242-2.png, id=79, 712.73172pt x 314.00069pt>
+<sources/Q242-2.png, id=82, 712.73172pt x 314.00069pt>
 File: sources/Q242-2.png Graphic file (type png)
 
 <use sources/Q242-2.png>
@@ -510,48 +522,48 @@ LaTeX Font Info:    Try loading font information for U+dsrom on input line 196.
 
 (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-) [13 <./sources/Q242-2.png (PNG copy)>] [14]
-<sources/Q252.png, id=87, 418.66759pt x 314.00069pt>
+) [14 <./sources/Q242-2.png (PNG copy)>] [15]
+<sources/Q252.png, id=90, 418.66759pt x 314.00069pt>
 File: sources/Q252.png Graphic file (type png)
  <use sources/Q252.png>
 Package pdftex.def Info: sources/Q252.png used on input line 246.
 (pdftex.def)             Requested size: 293.0653pt x 219.79897pt.
 
-[15] [16 <./sources/Q252.png (PNG copy)>]
+[16] [17 <./sources/Q252.png (PNG copy)>]
 Chapitre 2.
 
 Overfull \hbox (38.76526pt too wide) in paragraph at lines 280--280
 [] 
  []
 
-[17
+[18
 
-] [18] [19] <sources/Q314-1.png, id=104, 418.66759pt x 314.00069pt>
+] [19] [20] <sources/Q314-1.png, id=107, 418.66759pt x 314.00069pt>
 File: sources/Q314-1.png Graphic file (type png)
 
 <use sources/Q314-1.png>
 Package pdftex.def Info: sources/Q314-1.png used on input line 344.
 (pdftex.def)             Requested size: 293.0653pt x 219.79897pt.
 
-<sources/Q314-2.png, id=105, 418.66759pt x 314.00069pt>
+<sources/Q314-2.png, id=108, 418.66759pt x 314.00069pt>
 File: sources/Q314-2.png Graphic file (type png)
 
 <use sources/Q314-2.png>
 Package pdftex.def Info: sources/Q314-2.png used on input line 345.
 (pdftex.def)             Requested size: 293.0653pt x 219.79897pt.
 
-<sources/Q314-3.png, id=106, 418.66759pt x 314.00069pt>
+<sources/Q314-3.png, id=109, 418.66759pt x 314.00069pt>
 File: sources/Q314-3.png Graphic file (type png)
 
 <use sources/Q314-3.png>
 Package pdftex.def Info: sources/Q314-3.png used on input line 346.
 (pdftex.def)             Requested size: 293.0653pt x 219.79897pt.
- [20] [21 <./sources/Q314-1.png (PNG copy)> <./sources/Q314-2.png (PNG copy)>]
+ [21] [22 <./sources/Q314-1.png (PNG copy)> <./sources/Q314-2.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 368--370
 
  []
 
-[22 <./sources/Q314-3.png (PNG copy)>]
+[23 <./sources/Q314-3.png (PNG copy)>]
 File: sources/Q314-1.png Graphic file (type png)
  <use sources/Q314-1.png>
 Package pdftex.def Info: sources/Q314-1.png used on input line 384.
@@ -565,9 +577,9 @@ File: sources/Q314-3.png Graphic file (type png)
  <use sources/Q314-3.png>
 Package pdftex.def Info: sources/Q314-3.png used on input line 386.
 (pdftex.def)             Requested size: 293.0653pt x 219.79897pt.
- [23] [24] [25]
+ [24] [25] [26]
 Chapitre 3.
-[26
+[27
 
 ]
 Overfull \hbox (4.76282pt too wide) in paragraph at lines 420--420
@@ -577,19 +589,19 @@ Overfull \hbox (4.76282pt too wide) in paragraph at lines 420--420
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2012/04/20 UCS: Unicode data U+2000..U+20FF
 )
-<sources/Q531.png, id=129, 418.66759pt x 312.13164pt>
+<sources/Q531.png, id=132, 418.66759pt x 312.13164pt>
 File: sources/Q531.png Graphic file (type png)
  <use sources/Q531.png>
 Package pdftex.def Info: sources/Q531.png used on input line 424.
 (pdftex.def)             Requested size: 293.0653pt x 218.49065pt.
 
-[27]
+[28]
 Overfull \hbox (20.8667pt too wide) in paragraph at lines 426--426
  |[]\OT1/cmr/bx/n/12 Comparaison vi-suelle des im-ages avec diff^^Serentes vale
 urs
  []
 
-<sources/lena.jpg, id=134, 513.92pt x 513.92pt>
+<sources/lena.jpg, id=137, 513.92pt x 513.92pt>
 File: sources/lena.jpg Graphic file (type jpg)
  <use sources/lena.jpg>
 Package pdftex.def Info: sources/lena.jpg used on input line 429.
@@ -599,13 +611,13 @@ Overfull \hbox (14.74153pt too wide) in paragraph at lines 429--430
  [] 
  []
 
-<sources/Q5_99.jpg, id=135, 513.92pt x 513.92pt>
+<sources/Q5_99.jpg, id=138, 513.92pt x 513.92pt>
 File: sources/Q5_99.jpg Graphic file (type jpg)
  <use sources/Q5_99.jpg>
 Package pdftex.def Info: sources/Q5_99.jpg used on input line 437.
 (pdftex.def)             Requested size: 172.5pt x 172.50342pt.
 
-<sources/Q5_9995.jpg, id=136, 513.92pt x 513.92pt>
+<sources/Q5_9995.jpg, id=139, 513.92pt x 513.92pt>
 File: sources/Q5_9995.jpg Graphic file (type jpg)
  <use sources/Q5_9995.jpg>
 Package pdftex.def Info: sources/Q5_9995.jpg used on input line 442.
@@ -615,13 +627,13 @@ Overfull \hbox (4.44443pt too wide) in paragraph at lines 436--445
  []$  $[]$ 
  []
 
-<sources/Q5_9999.jpg, id=137, 513.92pt x 513.92pt>
+<sources/Q5_9999.jpg, id=140, 513.92pt x 513.92pt>
 File: sources/Q5_9999.jpg Graphic file (type jpg)
  <use sources/Q5_9999.jpg>
 Package pdftex.def Info: sources/Q5_9999.jpg used on input line 447.
 (pdftex.def)             Requested size: 172.5pt x 172.50342pt.
 
-<sources/Q5_99999.jpg, id=138, 513.92pt x 513.92pt>
+<sources/Q5_99999.jpg, id=141, 513.92pt x 513.92pt>
 File: sources/Q5_99999.jpg Graphic file (type jpg)
  <use sources/Q5_99999.jpg>
 Package pdftex.def Info: sources/Q5_99999.jpg used on input line 452.
@@ -631,7 +643,7 @@ Overfull \hbox (6.66664pt too wide) in paragraph at lines 446--456
  []$[]$  $[]$  
  []
 
-[28 <./sources/Q531.png (PNG copy)>] [29 <./sources/lena.jpg>] [30 <./sources/Q
+[29 <./sources/Q531.png (PNG copy)>] [30 <./sources/lena.jpg>] [31 <./sources/Q
 5_99.jpg> <./sources/Q5_9995.jpg> <./sources/Q5_9999.jpg> <./sources/Q5_99999.j
 pg>] (./rapport.aux)
 
@@ -641,11 +653,11 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Here is how much of TeX's memory you used:
  6194 strings out of 495059
  86178 string characters out of 3182031
- 148399 words of memory out of 3000000
+ 148410 words of memory out of 3000000
  9248 multiletter control sequences out of 15000+200000
  17707 words of font info for 72 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,16n,38p,424b,542s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,16n,38p,356b,624s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texli
@@ -672,10 +684,10 @@ y7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm5.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on rapport.pdf (31 pages, 580914 bytes).
+Output written on rapport.pdf (32 pages, 591570 bytes).
 PDF statistics:
- 239 PDF objects out of 1000 (max. 8388607)
- 154 compressed objects within 2 object streams
+ 242 PDF objects out of 1000 (max. 8388607)
+ 156 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  111 words of extra memory for PDF output out of 10000 (max. 10000000)
 
